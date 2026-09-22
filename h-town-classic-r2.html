@@ -1,0 +1,1555 @@
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- Font Imports -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt8c2b98098e8575d5/fonts.css?v=1">
+
+<!-- Global Imports -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt962bf393a9d818eb/homepage.css?v=39">
+
+<!-- Module Imports -->
+<!-- Ticker -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltab827885b96db789/hp-ticker.css?v=5">
+
+<!-- Featured Categories -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt41784e241a330d70/hp-featured-categories.css?v=13">
+
+<!-- Banner with featured categories -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt15151bae612fd250/hp-banner-with-feat-cat.css?v=3">
+
+<!-- Scrollable cards -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt54e14b4437cf1046/hp-scrollable-cards.css?v=8">
+
+<!-- Hero Banner -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltab5dcd466b4a5dbd/hp-hero-banner.css?v=7">
+
+<!-- New and Upcoming Component -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt9e5beb1eb235cc7c/hp-new-upcoming.css?v=13">
+
+<!-- Holiday Season (Green) Component -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltfc55f84563d4bc13/hp-holiday-season.css?v=5">
+
+<!-- Evergreen ACC -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltb71a20c9b424a2ae/hp-acc-evergreen.css?v=2">
+
+<!-- Trending / Keep Shopping Banner -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt16a51b81740f9aff/hp-trending-keep-shopping-banner.css?v=5">
+
+<!-- Promo Banner -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt1c6ea5528dfec86f/hp-promo-banner.css?v=1">
+
+<!-- Evergreen - Customers are Shopping - Featured Categories -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt21f8241412f60d18/hp-customers-are-shopping.css?v=6">
+
+<!-- New Scrollable Cards -->
+<link rel="stylesheet"
+    href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltdb8836383bbcc5b5/hp-scrollable-cards-new.css?v=24">
+
+<!-- Common size styles -->
+
+<style>
+    .headline-svg {
+        height: clamp(32px, 2.5vw, 53px);
+        width: auto;
+    }
+
+    .text-card-title {
+        font-size: var(--text-card-title, clamp(16px, 1.69vw, 28px));
+    }
+
+    .text-card-promo {
+        /*font-size: var(--text-card-title, clamp(18px, 1.75vw, 48px));*/
+
+    }
+
+    .color-red {
+        color: #e81111;
+    }
+
+    .text-card-kicker {
+        font-size: var(--text-card-kicker, clamp(12px, 1.33vw, 22px));
+    }
+
+    .text-card-disclaimer {
+        font-size: var(--text-card-disclaimer, clamp(14px, 1.33vw, 22px));
+    }
+
+    .text-card-cta {
+        font-size: var(--text-card-cta, clamp(14px, 1.33vw, 22px));
+        text-decoration: underline;
+        font-weight: 700;
+    }
+</style>
+
+<!-- End of Common Imports -->
+
+<!-- H-Town Classic Registration Page (OST-16246) -->
+<style>
+    #htown-classic {
+        --htc-orange: #ea5c49;
+        --htc-navy: #0b2539;
+        --htc-white: #ffffff;
+        --htc-blue: #1946c8;
+        color: var(--htc-navy);
+    }
+
+    #htown-classic .htc-heading-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    #htown-classic .htc-heading-title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: clamp(24px, 1.93vw, 32px);
+        line-height: 1.2;
+        color: var(--htc-blue);
+        flex: 1 0 0;
+        min-width: 0;
+        margin: 0;
+    }
+
+    #htown-classic .htc-heading-cta {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--htc-blue);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    #htown-classic .htc-heading-cta:hover,
+    #htown-classic .htc-heading-cta:focus-visible {
+        color: var(--htc-blue);
+    }
+
+    #htown-classic .htc-stack {
+        overflow: hidden;
+        border-radius: 8px 8px 0 0;
+    }
+
+    #htown-classic .htc-countdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--htc-orange);
+        color: var(--htc-white);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+        font-size: clamp(12px, 1.45vw, 24px);
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: clamp(8px, 0.72vw, 12px) clamp(16px, 2.42vw, 40px);
+        margin: 0;
+    }
+
+    #htown-classic .htc-video-wrap {
+        position: relative;
+        background: var(--htc-navy);
+        min-height: clamp(280px, 49.46vw, 819px);
+        cursor: pointer;
+    }
+
+    #htown-classic .htc-video {
+        display: block;
+        width: 100%;
+        height: auto;
+        vertical-align: top;
+        cursor: pointer;
+    }
+
+    #htown-classic .htc-video-control {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+        width: clamp(1.5rem, 2.17vw, 2.25rem);
+        height: clamp(1.5rem, 2.17vw, 2.25rem);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 0;
+    }
+
+    #htown-classic .htc-video-control img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+    }
+
+    #htown-classic .htc-included {
+        background: var(--htc-orange);
+        color: var(--htc-white);
+        padding: clamp(24px, 3.86vw, 64px);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-included-header {
+        width: 100%;
+    }
+
+    #htown-classic .htc-included-header img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #htown-classic .htc-included-grid {
+        display: flex;
+        align-items: stretch;
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-included-item {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        gap: clamp(12px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-included-icon {
+        width: clamp(56px, 5.56vw, 92px);
+        height: clamp(56px, 5.56vw, 92px);
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    #htown-classic .htc-included-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 0;
+    }
+
+    #htown-classic .htc-included-copy img {
+        display: block;
+        width: auto;
+        height: clamp(12px, 1.03vw, 17px);
+    }
+
+    #htown-classic .htc-included-copy p {
+        margin: 0;
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 400;
+        font-size: clamp(12px, 0.85vw, 14px);
+        line-height: 1.2;
+        color: var(--htc-white);
+    }
+
+    #htown-classic .htc-proceeds {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(12px, 1.45vw, 24px);
+        background: var(--htc-white);
+        border-left: 1px solid var(--htc-navy);
+        border-right: 1px solid var(--htc-navy);
+        padding: clamp(12px, 0.72vw, 12px) clamp(16px, 2.42vw, 40px);
+    }
+
+    /* Figma Group 48096991: 208×43 desktop (1656), 164×34 mobile (375) */
+    #htown-classic .htc-proceeds-logo {
+        width: clamp(164px, 12.56vw, 208px);
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    #htown-classic .htc-proceeds-rule {
+        width: 1px;
+        height: clamp(24px, 1.75vw, 29px);
+        background: var(--htc-navy);
+        flex-shrink: 0;
+    }
+
+    #htown-classic .htc-proceeds p {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: clamp(12px, 0.85vw, 14px);
+        line-height: 1.2;
+        color: var(--htc-navy);
+        max-width: 920px;
+    }
+
+    #htown-classic .htc-register,
+    #htown-classic #htc-registration {
+        scroll-margin-top: 250px;
+    }
+
+    #htown-classic .htc-register {
+        background: var(--htc-navy);
+        padding: 0;
+    }
+
+    #htown-classic .htc-iframe {
+        display: block;
+        width: 100%;
+        min-height: 400px;
+        height: 1800px;
+        border: 0;
+        overflow: auto;
+        background: var(--htc-navy);
+    }
+
+    #htown-classic .htc-iframe-fallback {
+        margin: 0;
+        padding: 16px clamp(16px, 2.42vw, 40px) 0;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    #htown-classic .htc-iframe-fallback a {
+        color: var(--htc-white);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    #htown-classic .htc-iframe-fallback a:hover,
+    #htown-classic .htc-iframe-fallback a:focus-visible {
+        color: var(--htc-white);
+    }
+
+    #htown-classic .htc-faq-wrap > picture {
+        display: block;
+        width: 100%;
+        line-height: 0;
+    }
+
+    #htown-classic .htc-stripes {
+        display: block;
+        width: calc(100% + 2px);
+        max-width: none;
+        height: auto;
+        margin-left: -1px;
+        vertical-align: top;
+    }
+
+    #htown-classic .htc-faq-wrap {
+        width: 100%;
+        background: var(--htc-navy);
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #htown-classic .htc-faq-inner {
+        padding: clamp(16px, 1.93vw, 32px) clamp(16px, 1.45vw, 24px) clamp(24px, 1.93vw, 32px);
+    }
+
+    #htown-classic .acc-faq {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(20px, 1.932vw, 32px);
+        width: 100%;
+    }
+
+    #htown-classic .acc-faq__h2 {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: clamp(22px, 1.691vw, 28px);
+        line-height: 1.15;
+        color: var(--htc-white);
+        margin: 0;
+    }
+
+    #htown-classic .acc-faq__section {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(12px, 0.966vw, 16px);
+    }
+
+    #htown-classic .acc-faq__section-h3 {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: clamp(14px, 1.449vw, 24px);
+        line-height: 1.25;
+        color: var(--htc-white);
+        margin: 0;
+    }
+
+    #htown-classic .acc-faq__intro {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 500;
+        font-size: clamp(14px, 1.27vw, 21px);
+        line-height: 1.2;
+        color: var(--htc-white);
+        margin: 0;
+    }
+
+    #htown-classic .acc-faq__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 16px clamp(16px, 3.382vw, 56px);
+    }
+
+    #htown-classic .acc-faq__item {
+        flex: 0 0 calc(50% - clamp(8px, 1.691vw, 28px));
+        min-width: 260px;
+        background: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    #htown-classic .acc-faq__question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        min-height: 66px;
+        padding: 16px;
+        background: #ffffff;
+        border: none;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #000000;
+        margin: 0;
+        transition: padding-bottom 0.3s ease-out;
+    }
+
+    #htown-classic .acc-faq__icon {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease-out;
+    }
+
+    #htown-classic .acc-faq__answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding-top 0.3s ease-out, color 0.3s ease;
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 0 16px;
+    }
+
+    #htown-classic .acc-faq__answer p,
+    #htown-classic .acc-faq__answer ul,
+    #htown-classic .acc-faq__answer ol {
+        margin: 0 0 12px;
+    }
+
+    #htown-classic .acc-faq__answer p:last-child,
+    #htown-classic .acc-faq__answer ul:last-child,
+    #htown-classic .acc-faq__answer ol:last-child {
+        margin-bottom: 0;
+    }
+
+    #htown-classic .acc-faq__answer a {
+        color: #0066CC;
+        text-decoration: underline;
+    }
+
+    #htown-classic .acc-faq__item.active .acc-faq__question {
+        font-weight: 700;
+        padding-bottom: 12px;
+    }
+
+    #htown-classic .acc-faq__item.active .acc-faq__answer {
+        max-height: 2400px;
+        padding-top: 12px;
+        padding-bottom: 16px;
+        border-top: 1px solid #e0e0e0;
+        color: #000000;
+    }
+
+    #htown-classic .acc-faq__item.active .acc-faq__icon {
+        transform: rotate(180deg);
+    }
+
+    #htown-classic .htc-prep {
+        background: var(--htc-orange);
+        padding: clamp(24px, 3.86vw, 64px);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 1.45vw, 24px);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    #htown-classic .htc-prep-header {
+        width: 100%;
+    }
+
+    #htown-classic .htc-prep-header img {
+        display: block;
+        width: 100%;
+        max-width: 960px;
+        height: auto;
+    }
+
+    #htown-classic .htc-prep-ctas {
+        display: flex;
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-prep-cta {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 108px;
+        padding: 16px 24px;
+        box-sizing: border-box;
+        border: 2px solid var(--htc-white);
+        text-decoration: none;
+    }
+
+    #htown-classic .htc-prep-cta:hover,
+    #htown-classic .htc-prep-cta:focus-visible {
+        text-decoration: none;
+        opacity: 0.9;
+    }
+
+    #htown-classic .htc-prep-cta img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    #htown-classic .htc-shop-nike {
+        width: 267px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #htown-classic .htc-shop-jordan {
+        width: 277px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 767px) {
+        #htown-classic .htc-heading-title {
+            font-size: clamp(24px, 6.4vw, 32px);
+        }
+
+        #htown-classic .htc-countdown {
+            font-size: clamp(10px, 3.2vw, 12px);
+            padding: 12px 16px;
+        }
+
+        #htown-classic .htc-video-wrap {
+            min-height: clamp(280px, 130.4vw, 489px);
+        }
+
+        #htown-classic .htc-video-control {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        #htown-classic .htc-included {
+            padding: clamp(16px, 6.4vw, 24px);
+        }
+
+        #htown-classic .htc-included-grid {
+            flex-direction: column;
+            gap: clamp(16px, 5.33vw, 20px);
+        }
+
+        #htown-classic .htc-included-icon {
+            width: clamp(48px, 16vw, 60px);
+            height: clamp(48px, 16vw, 60px);
+        }
+
+        #htown-classic .htc-included-copy img {
+            height: 12px;
+        }
+
+        #htown-classic .htc-included-copy p {
+            font-size: clamp(12px, 3.2vw, 14px);
+        }
+
+        #htown-classic .htc-proceeds {
+            flex-direction: column;
+            text-align: center;
+            gap: 12px;
+            padding: 12px 16px;
+        }
+
+        #htown-classic .htc-proceeds-logo {
+            width: clamp(164px, 43.73vw, 208px);
+        }
+
+        #htown-classic .htc-proceeds-rule {
+            display: none;
+        }
+
+        #htown-classic .htc-proceeds p {
+            font-size: clamp(12px, 3.2vw, 14px);
+        }
+
+        #htown-classic .acc-faq {
+            gap: clamp(16px, 6.4vw, 24px);
+        }
+
+        #htown-classic .acc-faq__h2 {
+            font-size: clamp(22px, 5.333vw, 28px);
+        }
+
+        #htown-classic .acc-faq__section-h3 {
+            font-size: clamp(14px, 4.8vw, 24px);
+        }
+
+        #htown-classic .acc-faq__intro {
+            font-size: clamp(14px, 4.27vw, 16px);
+        }
+
+        #htown-classic .acc-faq__item {
+            flex: 0 0 100%;
+            min-width: 0;
+        }
+
+        #htown-classic .htc-prep {
+            padding: clamp(16px, 6.4vw, 24px);
+        }
+
+        #htown-classic .htc-prep-header {
+            text-align: center;
+        }
+
+        #htown-classic .htc-prep-header img {
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #htown-classic .htc-prep-ctas {
+            flex-direction: column;
+        }
+
+        #htown-classic .htc-prep-cta {
+            min-height: 88px;
+            padding: 12px 16px;
+        }
+    }
+</style>
+
+<div id="htown-classic">
+    <div class="cont-1656 hp-margin">
+        <div class="htc-heading-row">
+            <h1 class="htc-heading-title">H-Town Classic</h1>
+            <a href="#htc-registration" class="htc-heading-cta" data-omni="htownclassic_mac_registernow">Register Now</a>
+        </div>
+    </div>
+
+    <div class="cont-1656 hp-margin mb-3">
+        <div class="htc-stack">
+            <p id="htc-countdown" class="htc-countdown" aria-live="polite">SPOTS ARE FILLING FAST | REGISTER FOR FREE NOW</p>
+
+            <div class="htc-video-wrap" id="htc-video-section">
+                <video id="htcVideo" muted playsinline loop preload="metadata" class="htc-video img-fluid w-100"
+                    aria-label="Register your team for the H-Town Classic."
+                    data-omni="htownclassic_mac_registeryourteam"></video>
+                <button id="htcVideoBtn" class="htc-video-control" type="button" aria-label="Pause video">
+                    <img id="htcVideoIcon"
+                        src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb12959797e4cc5a/68dbe6f05b98db396064ec16/button_pause_default.svg"
+                        alt="Pause video">
+                </button>
+            </div>
+
+            <section class="htc-included" aria-label="What's included">
+                <div class="htc-included-header">
+                    <picture>
+                        <source media="(max-width: 767px)"
+                            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt69822d5ae914473c/6aa1cec2144a155089de6902/svg_header_signup-mobile_r2.svg">
+                        <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt8b58aa0b04c694b1/6aa1cec29ab7fd37c924005a/svg_header_signup-desktop_r2.svg"
+                            alt="Ready to sign up for free? Here's what's included.">
+                    </picture>
+                </div>
+                <div class="htc-included-grid">
+                    <div class="htc-included-item">
+                        <img class="htc-included-icon"
+                            src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt45dc702d14d04e23/6a8c9a93a3077c570c3fc5ca/svg_icon_tournamentplay.svg"
+                            alt="Basketball icon featuring a star motif.">
+                        <div class="htc-included-copy">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt4a75cc0063b82760/6a8c9a90a59451db7b62ae85/svg_header_tournamentplay-mobile.svg">
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blta2f84142fec26336/6a8c9a90a3077c8c3c3fc5c6/svg_header_tournamentplay-desktop.svg"
+                                    alt="Tournament play.">
+                            </picture>
+                            <p>Bring your best game to the 32-team double-elimination bracket. Every team will play at least two games, with a shot at city-wide bragging rights and a championship keepsake you’ll want to win!</p>
+                        </div>
+                    </div>
+                    <div class="htc-included-item">
+                        <img class="htc-included-icon"
+                            src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt33740c6423194271/6a8c9a9336492a124885edc2/svg_icon_jersey.svg"
+                            alt="Athletic jersey icon featuring a star motif.">
+                        <div class="htc-included-copy">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltcb62e0dc8d2a54bf/6a8c9a90d4aaa759917efaef/svg_header_playerjerseys-mobile.svg">
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt4e5bac44b52a4412/6a8c9a9062f1e2215aaffbdf/svg_header_playerjerseys-desktop.svg"
+                                    alt="Player jerseys.">
+                            </picture>
+                            <p>Every player will receive a team jersey to keep at check-in on Oct. 17. Submit jersey sizes during registration, and we’ll do our best to accommodate requests based on availability.</p>
+                        </div>
+                    </div>
+                    <div class="htc-included-item">
+                        <img class="htc-included-icon"
+                            src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdf27da8052597cbe/6a8c9a93c8ced9812c054dd4/svg_icon_morefun.svg"
+                            alt="Promotional Fun Can't Lose badge graphic.">
+                        <div class="htc-included-copy">
+                            <picture>
+                                <source media="(max-width: 767px)"
+                                    srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt6d608bc939494f46/6a8c9a90111155419c0cf955/svg_header_morethanbasketball-mobile.svg">
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt81c07d6d48ae2363/6a8c9a90da6aeae8d737a813/svg_header_morethanbasketball-desktop.svg"
+                                    alt="More than basketball.">
+                            </picture>
+                            <p>The action doesn't stop between games. Keep the fun going with off-the-court activities, food trucks, giveaways, and plenty of tournament-day excitement.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            <div class="htc-proceeds">
+                <img class="htc-proceeds-logo"
+                    src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt230cc7b8901e7b19/6a8c9aac6ea6da54e00090a7/logo_boysandgirlsclub.png"
+                    alt="Boys &amp; Girls Clubs of Greater Houston logo.">
+                <span class="htc-proceeds-rule" aria-hidden="true"></span>
+                <p>All proceeds from the H-Town Classic benefit the Boys &amp; Girls Clubs of Greater Houston, supporting youth programs and community development in the Houston area.</p>
+            </div>
+            -->
+
+            <div class="htc-register" id="htc-registration">
+                <p id="htc-iframe-fallback" class="htc-iframe-fallback" hidden>
+                    <a href="https://academysportsoutdoors.redpodium.com/htown-classic" target="_blank" rel="noopener noreferrer">If the registration form doesn’t appear, register here.</a>
+                </p>
+                <iframe id="htc-redpodium" class="htc-iframe"
+                    src="https://academysportsoutdoors.redpodium.com/htown-classic"
+                    title="H-Town Classic team registration" scrolling="no"
+                    referrerpolicy="strict-origin-when-cross-origin" allow="payment"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont-1656 hp-margin mb-4">
+        <div class="htc-faq-wrap">
+            <picture>
+                <source media="(max-width: 767px)"
+                    srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt252129545f468f22/6a8c9abba3077ca1933fc5ce/htownstripes-mobile.svg">
+                <img class="htc-stripes"
+                    src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltc4bcad82091b3dc9/6a8c9abb8433ee24f383eff7/htownstripes-desktop.svg"
+                    alt="Horizontal decorative stripes in white and space city orange.">
+            </picture>
+            <div class="htc-faq-inner">
+            <div class="acc-faq">
+                <h2 class="acc-faq__h2">Frequently Asked Questions</h2>
+
+                <div class="acc-faq__section">
+                    <h3 class="acc-faq__section-h3">About the H-Town Classic</h3>
+                    <div class="acc-faq__items">
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What is the H-Town Classic?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>The H-Town Classic is a 3x3 youth basketball tournament celebrating competition and community in the Greater Houston area. Brought to you by Academy Sports + Outdoors in partnership with Nike and Jordan Brand, the event brings together up to 128 teams across 4 divisions in a double-elimination format. All proceeds benefit the Boys &amp; Girls Clubs of Greater Houston, making this tournament both a celebration of the game and a community investment.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Who are the event emcees?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>The H-Town Classic will be emceed by Kiotti Brown, voice of the Houston Rockets, and Tausha Sanders, founder of Her Grails. Together, they will provide live commentary and keep the energy high throughout the tournament weekend.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What are the event dates and location?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p><strong>Dates:</strong> October 17-18, 2026</p>
+                                <p><strong>Location:</strong> Academy Sports + Outdoors Grand Parkway location in Katy</p>
+                                <p><strong>Address:</strong> 23155 Katy Fwy., Katy, TX 77450</p>
+                                <p>The tournament takes place on the front lot of the Academy store, as we transform it into a basketball festival with 6 half courts running simultaneously, along with games and activities.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Who is behind the tournament?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Hosted by Academy Sports + Outdoors in partnership with Nike and Jordan Brand.</p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Where do the proceeds go?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>All proceeds from the H-Town Classic benefit the Boys &amp; Girls Clubs of Greater Houston, supporting youth programs and community development in the Houston area.</p>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+
+                <div class="acc-faq__section">
+                    <h3 class="acc-faq__section-h3">Event Details</h3>
+                    <p class="acc-faq__intro">The H-Town Classic is a 32-team double-elimination tournament with 4 divisions for middle and high school boys and girls. Each team may have up to 4 players and must have a minimum of 3 players at registration.</p>
+                    <div class="acc-faq__items">
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What divisions are offered?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>The H-Town Classic features 4 divisions:</p>
+                                <ul>
+                                    <li>Middle School (grades 6-8) Boys</li>
+                                    <li>Middle School (grades 6-8) Girls</li>
+                                    <li>High School (grades 9-12) Boys</li>
+                                    <li>High School (grades 9-12) Girls</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                How many games will my team play?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Each team plays in a 32-team double-elimination bracket. In double-elimination format, teams typically play a minimum of 2-3 games, with opportunities to advance based on wins and losses. The exact number of games depends on your team's performance in the tournament.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What time does the tournament start and end?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Games are scheduled to START at 8:30 a.m. on both days. On Saturday, we recommend teams arrive approximately one (1) hour ahead of your scheduled game time. This allows time for check-in and jersey pickup.</p>
+                                <p>Games are scheduled to end at 7 p.m. on both days.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What is the schedule for Saturday and Sunday?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Games run continuously on both days. Game time and court assignments will be based on how you advance in the tournament.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Why does the tournament end at 7 p.m. both days?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Games end at 7 p.m. to ensure all play concludes before the sun goes down, allowing for optimal visibility and safety throughout the tournament.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-faq__section">
+                    <h3 class="acc-faq__section-h3">Registration</h3>
+                    <div class="acc-faq__items">
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                How do I register my team?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Registering is easy!</p>
+                                <ol>
+                                    <li>Complete the <a href="#htc-registration">above registration form</a>.</li>
+                                    <li>Review your team's information for accuracy.</li>
+                                    <li>Submit your team’s registration.</li>
+                                    <li>You will receive a confirmation email once your registration has been processed.</li>
+                                </ol>
+                                <p>There are 32 spots per division, once each division’s bracket is filled we will no longer accept registrations.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What is the team entry fee?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Team registration is free. There is no cost to register your team.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Is there a registration deadline?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Yes. To guarantee your team spot and division placement, registration must be completed by October 9, 2026, at 11:59 p.m. CT. Late registrations may be accepted on a space-available basis.</p>
+                                <p>There are 32 spots per bracket, once each division’s bracket is filled we will no longer accept registrations.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Can I change players after registering?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Yes, you can change players online via our <a href="https://academysportsoutdoors.am.webconnex.com" target="_blank" rel="noopener noreferrer">event registration platform</a> or on Oct. 17 at check-in.</p>
+                                <p><strong>Online (Edits allowed until Oct. 12 at 11:59 PM CT)</strong></p>
+                                <ul>
+                                    <li>Visit your team account center <a href="https://academysportsoutdoors.am.webconnex.com" target="_blank" rel="noopener noreferrer">here</a> and input the email you used to register.</li>
+                                    <li>Check your email for a login link with the subject line 'Academy Sports + Outdoors Account Center Login Link' which you can use to access your account center.</li>
+                                    <li>Select the 'Registrations' tab and use the pencil icon to edit individual player information or the plus icon to add a new player.</li>
+                                </ul>
+                                <p><strong>In-Person (Oct. 17 only)</strong></p>
+                                <p>At the event on Oct. 17th let organizers know you have a player swap when your team checks in. New players will need to provide a signed H-Town Classic Participant Waiver &amp; Release Form at check-in, with a parent or legal guardian's consent if they are minors.</p>
+                                <p><strong>Want to download a waiver &amp; release form ahead of time?</strong></p>
+                                <ul>
+                                    <li><a href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt722750617f6dc2e9/htownclassic18%2B" target="_blank" rel="noopener noreferrer">H-Town Classic Participant Waiver &amp; Release Form</a></li>
+                                    <li><a href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt0d49eaab65662f26/htownclassicunder18" target="_blank" rel="noopener noreferrer">H-Town Classic Participant Minor Waiver &amp; Release Form</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Can my team have co-ed rosters?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Teams must register in either the Boys’ or Girls’ Division. Co-ed rosters are not permitted.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Do all team members have to be from the same school?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>No. You can form your team with players from different schools, with all players meeting the age/grade requirements for your selected division.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Can a player be on multiple teams?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>No. Players may only participate on one team and cannot play for multiple teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-faq__section">
+                    <h3 class="acc-faq__section-h3">Tournament Rules</h3>
+                    <p class="acc-faq__intro">Key Rule: The target score for all games is 20 points, meaning the first team to reach 20 points within 20 minutes of play is declared the winner.</p>
+                    <div class="acc-faq__items">
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What are the game rules for the H-Town Classic?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>The H-Town Classic follows 3x3 basketball rules with the following specifications:</p>
+                                <ul>
+                                    <li>Game Length: First to 20 points OR 20 minutes, whichever comes first.</li>
+                                    <li>Game Format: 3x3 (3 players per team on court)</li>
+                                    <li>Bracket: Double-elimination format</li>
+                                </ul>
+                                <p>For complete rules and regulations, consult the official H-Town Classic rulebook <a href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltd4ad3ea612e6242a/htownclassic_officialrulebook" target="_blank" rel="noopener noreferrer">here</a>.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                How does 3x3 basketball differ from traditional 5x5?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>3x3 basketball is a faster paced, half-court game with 3 players per side instead of 5. Key differences include:</p>
+                                <ul>
+                                    <li>Played on half a court</li>
+                                    <li>Smaller rosters (3-4 players per team)</li>
+                                    <li>Faster pace and quicker game resolution</li>
+                                    <li>Players return to the back line after scores</li>
+                                    <li>2-point line at the 3-point distance</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What happens in a double-elimination bracket?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>In double-elimination, teams get a second chance after their first loss. After losing once, teams move to the "losers' bracket" and continue playing. Teams are eliminated after losing twice. This format continues until a champion emerges from the winners' bracket and a runner-up from the losers' bracket.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Are there restrictions on which division players can join?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Players must be within the grade range for their division:</p>
+                                <ul>
+                                    <li>Middle School Division: Grades 6-8</li>
+                                    <li>High School Division: Grades 9-12</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What happens if a team forfeits?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Forfeit policies are detailed in the official <a href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/bltd4ad3ea612e6242a/htownclassic_officialrulebook" target="_blank" rel="noopener noreferrer">H-Town Classic rules and tournament guidelines</a>. Teams should plan to have their roster available for all scheduled games to avoid forfeits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="acc-faq__section">
+                    <h3 class="acc-faq__section-h3">Day-Of Logistics</h3>
+                    <div class="acc-faq__items">
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Where should teams check in?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Team check-in details will be provided via email 5-7 days before the event and on the official H-Town Classic website. Check-in occurs on Oct. 17, from 7:30 a.m. to 1:30 p.m. We recommend that you arrive at venue approximately one (1) hour ahead of your scheduled game time to allow time for check-in and jersey pickup.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What time should we arrive?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Teams should arrive at venue approximately one (1) hour ahead of their scheduled game time to allow for check-in and court familiarization.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Is parking available?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Off-site parking will be available for the tournament. More information will be provided as the event date approaches.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Can spectators attend?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Yes! Family, friends, and community members are welcome to attend the H-Town Classic. The event is designed as a community celebration of basketball, so spectators are encouraged. Beyond basketball, there will be shopping, food, and interactive entertainment throughout the venue.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Will there be food and beverages available?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Yes. The H-Town Classic features food vendors and shopping opportunities throughout the event. While water will be provided, it's recommended to bring water and snacks for your team as well, given the outdoor setting and long tournament hours.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What should I bring?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Recommended items for tournament day:</p>
+                                <ul>
+                                    <li>Basketball shoes and appropriate athletic wear</li>
+                                    <li>Water and electrolyte beverages</li>
+                                    <li>Snacks and energy foods</li>
+                                    <li>Sunscreen (outdoor event)</li>
+                                    <li>Hat or visor</li>
+                                    <li>Towel</li>
+                                    <li>ID/registration confirmation</li>
+                                    <li>Any necessary medications</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                How will game brackets be posted?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Bracket assignments will be sent to team contacts via email prior to the event. Brackets will also be posted at the venue.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                How will I know my team's game times?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>First game times will be sent to your team contacts 5-7 days before the event. Arrive early, as schedules can change based on other game results. The complete brackets and live schedules will be posted at the venue with updates as teams move forward in the tournament.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What is the weather contingency plan?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Weather contingency plans will be communicated before the event. Since games must end by 7 p.m. both days, the schedule is tight. Organizers will monitor conditions and provide updates. Check the official website and your email for any weather-related updates.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Is the event accessible for people with disabilities?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Yes. Academy Sports + Outdoors is a public facility with ADA accommodations. Please contact the H-Town Classic organizers if you have specific accessibility needs or questions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <section class="htc-prep corners-bottom" aria-label="Prep your team">
+            <div class="htc-prep-header">
+                <picture>
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt3e38d325a061e413/6a8c9c84386ac378d4ae011a/svg_header_prepyourteam-mobile.svg">
+                    <img class="img-fluid"
+                        src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt28261f65a7542769/6a8cc217da6aea73f537a935/svg_header_prepyourteam-desktop_R2.svg"
+                        alt="Prep your team for the tournament.">
+                </picture>
+            </div>
+            <div class="htc-prep-ctas">
+                <a class="htc-prep-cta corners" href="https://www.academy.com/c/brands/nike-brand-shop" data-omni="htownclassic_mac_shopnike"
+                    aria-label="Shop Nike.">
+                    <img class="htc-shop-nike"
+                        src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltcf7ecc72629b772a/6a8c9c84b74e9d767e44a054/shop_nike-desktop.svg"
+                        alt="Shop Nike.">
+                </a>
+                <a class="htc-prep-cta corners" href="https://www.academy.com/c/brands/jordan" data-omni="htownclassic_mac_shopjordan"
+                    aria-label="Shop Jordan.">
+                    <img class="htc-shop-jordan"
+                        src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt52d5c92029763369/6a8c9c84321a2a0afacc258b/shop_jordan-desktop.svg"
+                        alt="Shop Jordan.">
+                </a>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    /* Videos from FY26 H-Town Classic content doc */
+    var desktopUrl = 'https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt865389c55bb8d1a6/6a8f3f9fd4aaa7ac397f092b/eb_1click_htown_R2-desktop.mp4';
+    var mobileUrl = 'https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt60e8448ce31c4760/6a8f3f9e36492a33db85fd3c/eb_1click_htown_R2-mobile.mp4';
+    var registrationDeadline = new Date('2026-10-10T04:59:00Z');
+    var spotsFillingStart = new Date('2026-09-05T05:00:00Z');
+    var countdownStart = new Date('2026-10-02T05:00:00Z');
+    var maxPlayCount = Infinity;
+    var playIconUrl = 'https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltfb7f6e5f516cd86b/68dbe6f04983061fa4f367e1/button_play_default.svg';
+    var pauseIconUrl = 'https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb12959797e4cc5a/68dbe6f05b98db396064ec16/button_pause_default.svg';
+
+    var countdownEl = document.getElementById('htc-countdown');
+    if (countdownEl) {
+        var now = new Date();
+        var label;
+        if (now.getTime() >= registrationDeadline.getTime()) {
+            label = 'REGISTRATION CLOSED';
+        } else if (now.getTime() >= countdownStart.getTime()) {
+            var daysLeft = Math.ceil((registrationDeadline.getTime() - now.getTime()) / 86400000);
+            if (daysLeft <= 0) {
+                label = 'LAST DAY TO REGISTER';
+            } else if (daysLeft === 1) {
+                label = '1 DAY LEFT TO REGISTER';
+            } else {
+                label = daysLeft + ' DAYS LEFT TO REGISTER';
+            }
+        } else if (now.getTime() >= spotsFillingStart.getTime()) {
+            label = 'SPOTS ARE FILLING FAST | REGISTER FOR FREE NOW';
+        } else {
+            label = 'REGISTRATION IS NOW OPEN!';
+        }
+        countdownEl.textContent = label;
+    }
+
+    var wrap = document.getElementById('htc-video-section');
+    var video = document.getElementById('htcVideo');
+    var btn = document.getElementById('htcVideoBtn');
+    var icon = document.getElementById('htcVideoIcon');
+
+    function goToRegistration() {
+        var target = document.getElementById('htc-registration');
+        window.location.hash = 'htc-registration';
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    if (wrap) {
+        wrap.addEventListener('click', function (e) {
+            if (e.target.closest('#htcVideoBtn')) return;
+            e.preventDefault();
+            goToRegistration();
+        });
+    }
+
+    var iframe = document.getElementById('htc-redpodium');
+    if (iframe) {
+        var redPodiumOrigin = 'https://academysportsoutdoors.redpodium.com';
+        var iframeInitMsg = '[iFrameSizer]htc-redpodium:0:false:false:32:true:true:0px:bodyOffset:null:null:0:false:parent';
+        var iframeSized = false;
+        var iframeInitAttempts = 0;
+        var iframeInitTimer = null;
+        var iframeMinPx = 1800;
+        var iframeFallbackPx = 2200;
+        var iframeFallbackEl = document.getElementById('htc-iframe-fallback');
+        var iframeHeardFrom = false;
+        var iframeFallbackTimer = null;
+
+        function hideIframeFallback() {
+            if (iframeFallbackEl) {
+                iframeFallbackEl.hidden = true;
+            }
+            if (iframeFallbackTimer) {
+                clearTimeout(iframeFallbackTimer);
+                iframeFallbackTimer = null;
+            }
+        }
+
+        function showIframeFallback() {
+            if (iframeFallbackEl && !iframeHeardFrom) {
+                iframeFallbackEl.hidden = false;
+            }
+        }
+
+        function scheduleIframeFallback() {
+            iframeHeardFrom = false;
+            hideIframeFallback();
+            iframeFallbackTimer = setTimeout(showIframeFallback, 5000);
+        }
+
+        function markIframeReady() {
+            iframeHeardFrom = true;
+            hideIframeFallback();
+        }
+
+        function sendIframeInit() {
+            if (iframe.contentWindow) {
+                iframe.contentWindow.postMessage(iframeInitMsg, redPodiumOrigin);
+            }
+        }
+
+        function allowIframeScroll() {
+            iframe.setAttribute('scrolling', 'yes');
+            iframe.style.overflow = 'auto';
+        }
+
+        function lockIframeHeight(height) {
+            if (isNaN(height) || height < iframeMinPx) {
+                allowIframeScroll();
+                return;
+            }
+            iframeSized = true;
+            iframe.style.height = height + 'px';
+            iframe.setAttribute('scrolling', 'no');
+            iframe.style.overflow = 'hidden';
+            markIframeReady();
+        }
+
+        function applyIframeFallback() {
+            if (iframeSized) {
+                return;
+            }
+            allowIframeScroll();
+            var current = parseInt(iframe.style.height, 10) || iframe.offsetHeight || 0;
+            if (current < iframeFallbackPx) {
+                iframe.style.height = iframeFallbackPx + 'px';
+            }
+        }
+
+        function startIframeInitRetries() {
+            iframeSized = false;
+            iframeInitAttempts = 0;
+            allowIframeScroll();
+            if (!iframeHeardFrom) {
+                scheduleIframeFallback();
+            }
+            sendIframeInit();
+            if (iframeInitTimer) {
+                clearInterval(iframeInitTimer);
+            }
+            iframeInitTimer = setInterval(function () {
+                iframeInitAttempts += 1;
+                if (iframeSized) {
+                    clearInterval(iframeInitTimer);
+                    iframeInitTimer = null;
+                    return;
+                }
+                if (iframeInitAttempts > 6) {
+                    clearInterval(iframeInitTimer);
+                    iframeInitTimer = null;
+                    applyIframeFallback();
+                    return;
+                }
+                sendIframeInit();
+            }, 400);
+        }
+
+        window.addEventListener('message', function (event) {
+            if (!event.origin || event.origin.indexOf('redpodium.com') === -1) {
+                return;
+            }
+            var msg = '' + event.data;
+            if (msg.indexOf('[iFrameSizer]') !== 0) {
+                return;
+            }
+            var payload = msg.split(']')[1];
+            if (!payload || payload === 'resize' || payload === 'reset') {
+                return;
+            }
+            var parts = payload.split(':');
+            if (parts[3] === 'true' || parts[3] === 'false' || parts[3] === 'undefined') {
+                return;
+            }
+            var height = parseInt(parts[1], 10);
+            if (!isNaN(height) && height > 100) {
+                markIframeReady();
+                lockIframeHeight(height);
+            }
+        });
+
+        iframe.addEventListener('load', startIframeInitRetries);
+        iframe.addEventListener('error', showIframeFallback);
+        startIframeInitRetries();
+
+        window.addEventListener('resize', function () {
+            if (iframe.contentWindow) {
+                iframe.contentWindow.postMessage('[iFrameSizer]resize', redPodiumOrigin);
+            }
+        });
+    }
+
+    function getUrl() {
+        return window.innerWidth < 768 ? mobileUrl : desktopUrl;
+    }
+
+    if (!wrap || !video || !btn || !icon || (!desktopUrl && !mobileUrl)) {
+        return;
+    }
+
+    var isPlaying = false;
+    var currentUrl = null;
+    var completedPlayCount = 0;
+    var hasEnteredViewport = false;
+    var hasExitedViewportAfterEntry = false;
+
+    function canPlayAgain() {
+        return completedPlayCount < maxPlayCount;
+    }
+
+    function setIcon(playing) {
+        if (playing) {
+            icon.src = pauseIconUrl;
+            icon.alt = 'Pause';
+            btn.setAttribute('aria-label', 'Pause video');
+        } else {
+            icon.src = playIconUrl;
+            icon.alt = 'Play';
+            btn.setAttribute('aria-label', 'Play video');
+        }
+    }
+
+    function startVideo() {
+        if (!canPlayAgain()) {
+            pauseVideo();
+            return;
+        }
+        var newUrl = getUrl();
+        if (!newUrl) return;
+        if (newUrl !== currentUrl) {
+            currentUrl = newUrl;
+            video.src = currentUrl;
+            video.load();
+        }
+        video.play().catch(function () {});
+        isPlaying = true;
+        setIcon(true);
+    }
+
+    function pauseVideo() {
+        video.pause();
+        isPlaying = false;
+        setIcon(false);
+    }
+
+    function updateSource() {
+        var newUrl = getUrl();
+        if (!newUrl || newUrl === currentUrl) return;
+        currentUrl = newUrl;
+        video.src = currentUrl;
+        video.load();
+        if (isPlaying) {
+            video.play().catch(function () {});
+        }
+    }
+
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(updateSource, 50);
+    });
+
+    btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (isPlaying) {
+            pauseVideo();
+        } else {
+            completedPlayCount = 0;
+            startVideo();
+        }
+    });
+
+    video.addEventListener('ended', function () {
+        if (video.loop) {
+            return;
+        }
+        completedPlayCount += 1;
+        isPlaying = false;
+        setIcon(false);
+    });
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            var visible = entry.isIntersecting && entry.intersectionRatio >= 0.25;
+            if (visible) {
+                if (!hasEnteredViewport) {
+                    hasEnteredViewport = true;
+                    startVideo();
+                    return;
+                }
+                if (hasExitedViewportAfterEntry) {
+                    startVideo();
+                    return;
+                }
+            } else {
+                if (hasEnteredViewport) hasExitedViewportAfterEntry = true;
+                if (isPlaying) pauseVideo();
+            }
+        });
+    }, { threshold: [0, 0.25] });
+
+    currentUrl = getUrl();
+    if (currentUrl) video.src = currentUrl;
+    setIcon(true);
+    observer.observe(wrap);
+})();
+
+(function () {
+    'use strict';
+    document.querySelectorAll('#htown-classic .acc-faq__item').forEach(function (item) {
+        var answer = item.querySelector('.acc-faq__answer');
+        if (!item.querySelector('.acc-faq__question') || !answer) return;
+        item.addEventListener('click', function () {
+            item.classList.toggle('active');
+            answer.style.maxHeight = item.classList.contains('active')
+                ? (answer.scrollHeight + 32) + 'px'
+                : '0';
+        });
+    });
+}());
+</script>
+<!-- H-Town Classic Registration Page -->
