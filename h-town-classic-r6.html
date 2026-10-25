@@ -99,7 +99,7 @@
 
 <!-- End of Common Imports -->
 
-<!-- H-Town Classic Registration Page (OST-16246) -->
+<!-- H-Town Classic Registration Page (OST-16246, OST-16574, OST-16612 — day one recap) -->
 <style>
     #htown-classic {
         --htc-orange: #ea5c49;
@@ -216,6 +216,11 @@
         gap: clamp(16px, 1.45vw, 24px);
     }
 
+    #htown-classic .htc-included-head {
+        position: relative;
+        width: 100%;
+    }
+
     #htown-classic .htc-included-header {
         width: 100%;
     }
@@ -224,6 +229,42 @@
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    #htown-classic .htc-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 48px;
+        height: 48px;
+        padding: 12px;
+        box-sizing: border-box;
+        background: var(--htc-orange);
+        border: 2px solid var(--htc-white);
+        border-radius: 4px;
+        color: var(--htc-white);
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    #htown-classic .htc-btn:hover,
+    #htown-classic .htc-btn:focus-visible {
+        background: var(--htc-white);
+        color: var(--htc-orange);
+        text-decoration: none;
+    }
+
+    #htown-classic .htc-included-cta {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
     }
 
     #htown-classic .htc-included-grid {
@@ -264,49 +305,180 @@
         margin: 0;
         font-family: 'Roboto Flex', sans-serif;
         font-weight: 400;
-        font-size: clamp(12px, 0.85vw, 14px);
+        font-size: 18px;
         line-height: 1.2;
         color: var(--htc-white);
     }
 
-    #htown-classic .htc-proceeds {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: clamp(12px, 1.45vw, 24px);
-        background: var(--htc-white);
-        border-left: 1px solid var(--htc-navy);
-        border-right: 1px solid var(--htc-navy);
-        padding: clamp(12px, 0.72vw, 12px) clamp(16px, 2.42vw, 40px);
-    }
-
-    /* Figma Group 48096991: 208×43 desktop (1656), 164×34 mobile (375) */
-    #htown-classic .htc-proceeds-logo {
-        width: clamp(164px, 12.56vw, 208px);
-        height: auto;
-        flex-shrink: 0;
-    }
-
-    #htown-classic .htc-proceeds-rule {
-        width: 1px;
-        height: clamp(24px, 1.75vw, 29px);
-        background: var(--htc-navy);
-        flex-shrink: 0;
-    }
-
-    #htown-classic .htc-proceeds p {
-        margin: 0;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: clamp(12px, 0.85vw, 14px);
-        line-height: 1.2;
-        color: var(--htc-navy);
-        max-width: 920px;
-    }
-
-    #htown-classic .htc-register,
-    #htown-classic #htc-registration {
+    #htown-classic #htc-event-details {
         scroll-margin-top: 250px;
+    }
+
+    #htown-classic .htc-tdi {
+        --htc-tdi-pad: clamp(24px, 3.86vw, 64px);
+        background: var(--htc-navy);
+        color: var(--htc-white);
+        padding: var(--htc-tdi-pad);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 1.45vw, 24px);
+        overflow: hidden;
+    }
+
+    #htown-classic .htc-tdi-heading {
+        margin-right: calc(-1 * var(--htc-tdi-pad));
+    }
+
+    #htown-classic .htc-tdi-heading img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #htown-classic .htc-tdi-body {
+        display: grid;
+        grid-template-columns: minmax(0, 796fr) minmax(0, 708fr);
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "parking map"
+            "rest map";
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-tdi-parking {
+        grid-area: parking;
+    }
+
+    #htown-classic .htc-tdi-map {
+        grid-area: map;
+    }
+
+    #htown-classic .htc-tdi-map img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #htown-classic .htc-tdi-rest {
+        grid-area: rest;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-tdi-group h3 {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 700;
+        font-size: clamp(20px, 1.69vw, 28px);
+        line-height: 1.15;
+        color: var(--htc-white);
+        margin: 0 0 clamp(10px, 0.97vw, 16px);
+    }
+
+    #htown-classic .htc-tdi-group p,
+    #htown-classic .htc-tdi-group ul {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0 0 14px;
+    }
+
+    #htown-classic .htc-tdi-group ul {
+        padding-left: 27px;
+    }
+
+    #htown-classic .htc-tdi-group > ul:last-child,
+    #htown-classic .htc-tdi-group > p:last-child {
+        margin-bottom: 0;
+    }
+
+    #htown-classic .htc-tdi-group li {
+        margin-bottom: 1.2em;
+    }
+
+    #htown-classic .htc-tdi-group li:last-child {
+        margin-bottom: 0;
+    }
+
+    #htown-classic .htc-tdi-group li > ul {
+        margin: 0.6em 0 0;
+    }
+
+    #htown-classic .htc-tdi-group li > ul > li {
+        margin-bottom: 0;
+    }
+
+    #htown-classic .htc-tdi-group a {
+        color: var(--htc-white);
+        text-decoration: underline;
+    }
+
+    #htown-classic .htc-emcees {
+        --htc-emcees-pad: clamp(24px, 3.86vw, 64px);
+        background: linear-gradient(180deg, var(--htc-navy) 0%, #43596a 100%);
+        color: var(--htc-white);
+        padding: var(--htc-emcees-pad);
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 1.45vw, 24px);
+        overflow: hidden;
+    }
+
+    #htown-classic .htc-emcees-header img {
+        display: block;
+        width: auto;
+        height: clamp(40px, 4.23vw, 70px);
+        max-width: 100%;
+    }
+
+    #htown-classic .htc-emcees-grid {
+        display: flex;
+        align-items: flex-start;
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-emcee {
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: clamp(16px, 1.45vw, 24px);
+    }
+
+    #htown-classic .htc-emcee-photo {
+        display: block;
+        width: 135px;
+        height: 166px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    #htown-classic .htc-emcee-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 0;
+    }
+
+    #htown-classic .htc-emcee-name {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--htc-white);
+        margin: 0;
+    }
+
+    #htown-classic .htc-emcee-copy p {
+        font-family: 'Roboto Flex', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--htc-white);
+        margin: 0;
     }
 
     #htown-classic .htc-register {
@@ -322,27 +494,6 @@
         border: 0;
         overflow: auto;
         background: var(--htc-navy);
-    }
-
-    #htown-classic .htc-iframe-fallback {
-        margin: 0;
-        padding: 16px clamp(16px, 2.42vw, 40px) 0;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    #htown-classic .htc-iframe-fallback a {
-        color: var(--htc-white);
-        text-decoration: underline;
-        text-decoration-skip-ink: none;
-    }
-
-    #htown-classic .htc-iframe-fallback a:hover,
-    #htown-classic .htc-iframe-fallback a:focus-visible {
-        color: var(--htc-white);
     }
 
     #htown-classic .htc-faq-wrap > picture {
@@ -589,9 +740,87 @@
             padding: clamp(16px, 6.4vw, 24px);
         }
 
+        #htown-classic .htc-included-head {
+            display: contents;
+        }
+
+        #htown-classic .htc-included-cta {
+            position: static;
+            transform: none;
+            order: 1;
+            width: 100%;
+        }
+
         #htown-classic .htc-included-grid {
             flex-direction: column;
             gap: clamp(16px, 5.33vw, 20px);
+        }
+
+        #htown-classic .htc-tdi {
+            --htc-tdi-pad: 16px;
+            padding-top: 24px;
+            gap: 12px;
+        }
+
+        #htown-classic .htc-tdi-heading {
+            margin-left: calc(-1 * var(--htc-tdi-pad));
+        }
+
+        #htown-classic .htc-tdi-body {
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "parking"
+                "map"
+                "rest";
+            gap: 12px;
+        }
+
+        #htown-classic .htc-tdi-rest {
+            gap: 12px;
+        }
+
+        #htown-classic .htc-tdi-group h3 {
+            line-height: 1.3;
+            margin-bottom: 10px;
+        }
+
+        #htown-classic .htc-emcees {
+            --htc-emcees-pad: 16px;
+            gap: 12px;
+        }
+
+        #htown-classic .htc-emcees-header {
+            margin: 0 calc(-1 * var(--htc-emcees-pad));
+        }
+
+        #htown-classic .htc-emcees-header img {
+            width: 100%;
+            height: auto;
+            max-width: none;
+        }
+
+        #htown-classic .htc-emcees-grid {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        #htown-classic .htc-emcee {
+            gap: 16px;
+        }
+
+        #htown-classic .htc-emcee-photo {
+            width: 88px;
+            height: 95px;
+        }
+
+        #htown-classic .htc-emcee-copy {
+            gap: 4px;
+        }
+
+        #htown-classic .htc-emcee-name {
+            font-size: 16px;
+            line-height: 1.2;
         }
 
         #htown-classic .htc-included-icon {
@@ -604,26 +833,7 @@
         }
 
         #htown-classic .htc-included-copy p {
-            font-size: clamp(12px, 3.2vw, 14px);
-        }
-
-        #htown-classic .htc-proceeds {
-            flex-direction: column;
-            text-align: center;
-            gap: 12px;
-            padding: 12px 16px;
-        }
-
-        #htown-classic .htc-proceeds-logo {
-            width: clamp(164px, 43.73vw, 208px);
-        }
-
-        #htown-classic .htc-proceeds-rule {
-            display: none;
-        }
-
-        #htown-classic .htc-proceeds p {
-            font-size: clamp(12px, 3.2vw, 14px);
+            font-size: 18px;
         }
 
         #htown-classic .acc-faq {
@@ -676,18 +886,18 @@
     <div class="cont-1656 hp-margin">
         <div class="htc-heading-row">
             <h1 class="htc-heading-title">H-Town Classic</h1>
-            <a href="#htc-registration" class="htc-heading-cta" data-omni="htownclassic_mac_registernow">Register Now</a>
+            <a href="#htc-event-details" class="htc-heading-cta" data-omni="htownclassic_mac_eventdetails">Event Details</a>
         </div>
     </div>
 
     <div class="cont-1656 hp-margin mb-3">
         <div class="htc-stack">
-            <p id="htc-countdown" class="htc-countdown" aria-live="polite">SPOTS ARE FILLING FAST | REGISTER FOR FREE NOW</p>
+            <p class="htc-countdown" id="htcCountdown" aria-live="polite">SEE YOU ON THE COURT OCT. 17-18!</p>
 
             <div class="htc-video-wrap" id="htc-video-section">
                 <video id="htcVideo" muted playsinline loop preload="metadata" class="htc-video img-fluid w-100"
-                    aria-label="Register your team for the H-Town Classic."
-                    data-omni="htownclassic_mac_registeryourteam"></video>
+                    aria-label="H-Town Classic day one recap. See event details below."
+                    data-omni="htownclassic_mac_eventdetails"></video>
                 <button id="htcVideoBtn" class="htc-video-control" type="button" aria-label="Pause video">
                     <img id="htcVideoIcon"
                         src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb12959797e4cc5a/68dbe6f05b98db396064ec16/button_pause_default.svg"
@@ -695,14 +905,19 @@
                 </button>
             </div>
 
-            <section class="htc-included" aria-label="What's included">
-                <div class="htc-included-header">
-                    <picture>
-                        <source media="(max-width: 767px)"
-                            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt69822d5ae914473c/6aa1cec2144a155089de6902/svg_header_signup-mobile_r2.svg">
-                        <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt8b58aa0b04c694b1/6aa1cec29ab7fd37c924005a/svg_header_signup-desktop_r2.svg"
-                            alt="Ready to sign up for free? Here's what's included.">
-                    </picture>
+            <section class="htc-included" aria-label="See you on the court">
+                <div class="htc-included-head">
+                    <div class="htc-included-header">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt5aa915fab4f43367/6acffb30cb36195d26dbd80e/svg_header_seeyouonthecourt-mobile.svg">
+                            <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt974cd151300e55ee/6acffb306ac96c146aa0e282/svg_header_seeyouonthecourt-desktop.svg"
+                                alt="See you on the court Oct. 17-18!">
+                        </picture>
+                    </div>
+                    <!-- TODO (OST-16612): bracket download link pending — hidden until link is ready -->
+                    <a class="htc-btn htc-included-cta d-none" href="#" target="_blank" rel="noopener noreferrer"
+                        data-omni="htownclassic_mac_scheduleandbracket" hidden aria-hidden="true">Official Schedule + Bracket</a>
                 </div>
                 <div class="htc-included-grid">
                     <div class="htc-included-item">
@@ -716,7 +931,7 @@
                                 <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blta2f84142fec26336/6a8c9a90a3077c8c3c3fc5c6/svg_header_tournamentplay-desktop.svg"
                                     alt="Tournament play.">
                             </picture>
-                            <p>Bring your best game to the 32-team double-elimination bracket. Every team will play at least two games, with a shot at city-wide bragging rights and a championship keepsake you’ll want to win!</p>
+                            <p>Bring your best game to the 32-team double-elimination bracket. Every team will play at least 2 games, with a shot at city-wide bragging rights and a championship keepsake you’re gonna want to win!</p>
                         </div>
                     </div>
                     <div class="htc-included-item">
@@ -730,7 +945,7 @@
                                 <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt4e5bac44b52a4412/6a8c9a9062f1e2215aaffbdf/svg_header_playerjerseys-desktop.svg"
                                     alt="Player jerseys.">
                             </picture>
-                            <p>Every player will receive a team jersey to keep at check-in on Oct. 17. Submit jersey sizes during registration, and we’ll do our best to accommodate requests based on availability.</p>
+                            <p>Every player will receive a jersey that’s theirs to keep at check-in on Oct. 17. Participants must arrive at the Corporate Office parking lot <strong>at least 1 hour prior to their scheduled game time.</strong></p>
                         </div>
                     </div>
                     <div class="htc-included-item">
@@ -750,29 +965,122 @@
                 </div>
             </section>
 
-            <!--
-            <div class="htc-proceeds">
-                <img class="htc-proceeds-logo"
-                    src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt230cc7b8901e7b19/6a8c9aac6ea6da54e00090a7/logo_boysandgirlsclub.png"
-                    alt="Boys &amp; Girls Clubs of Greater Houston logo.">
-                <span class="htc-proceeds-rule" aria-hidden="true"></span>
-                <p>All proceeds from the H-Town Classic benefit the Boys &amp; Girls Clubs of Greater Houston, supporting youth programs and community development in the Houston area.</p>
-            </div>
-            -->
+            <section class="htc-tdi" id="htc-event-details" aria-labelledby="htc-tdi-title">
+                <h2 class="htc-tdi-heading m-0" id="htc-tdi-title">
+                    <picture>
+                        <source media="(max-width: 767px)"
+                            srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltd50a172e346403aa/6acffb9c35b26de3a09a8ada/header_svg_tournamentdayinfo-mobile.svg">
+                        <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt43971847166364ba/6acffb9c35b26d3fad9a8ad6/header_svg_tournamentdayinfo-desktop.svg"
+                            alt="Tournament day information">
+                    </picture>
+                </h2>
+                <div class="htc-tdi-body">
+                    <div class="htc-tdi-group htc-tdi-parking">
+                        <h3>Designated Parking</h3>
+                        <p><strong><u>All</u></strong> players, volunteers, guests, and spectators <strong><u>must</u></strong> park at the <strong>Academy Sports + Outdoors Corporate Office</strong> located at: <strong>1800 N. Mason Rd., Katy, TX 77449</strong></p>
+                        <ul>
+                            <li>Buses/shuttles will begin transporting participants from the corporate parking lot to the store beginning at 6:30 a.m. on 10/17 and 10/18.</li>
+                            <li>Tournament Location: Academy Sports + Outdoors – Grand Parkway Location: 23155 Katy Fwy., Katy, TX 77450</li>
+                        </ul>
+                    </div>
 
-            <div class="htc-register" id="htc-registration">
-                <p id="htc-iframe-fallback" class="htc-iframe-fallback" hidden>
-                    <a href="https://academysportsoutdoors.redpodium.com/htown-classic" target="_blank" rel="noopener noreferrer">If the registration form doesn’t appear, register here.</a>
-                </p>
-                <iframe id="htc-redpodium" class="htc-iframe"
-                    src="https://academysportsoutdoors.redpodium.com/htown-classic"
-                    title="H-Town Classic team registration" scrolling="no"
-                    referrerpolicy="strict-origin-when-cross-origin" allow="payment"></iframe>
-            </div>
+                    <div class="htc-tdi-map">
+                        <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt86e625f220824db3/6acffbc4ea4732a55c30fe35/parking-map.png"
+                            width="1416" height="1028" loading="lazy"
+                            alt="Map of the bus and shuttle route from designated parking at the Academy Corporate Office on N. Mason Rd., along the Interstate 10 frontage road, to the Academy Grand Parkway store.">
+                    </div>
+
+                    <div class="htc-tdi-rest">
+                        <div class="htc-tdi-group">
+                            <h3>Event Schedule + Arrival Times</h3>
+                            <ul>
+                                <li><strong>Event Start Time:</strong> 8:30 a.m. on both Saturday, October 17, and Sunday, October 18.</li>
+                                <li><strong>Mandatory Arrival Time:</strong> Teams and participants must arrive at the Corporate Office parking lot <strong>at least 1 hour prior to their scheduled game time</strong> to allow enough time for parking, the shuttle ride over to the store, team check-in, and warming up.</li>
+                            </ul>
+                        </div>
+
+                        <div class="htc-tdi-group">
+                            <h3>Weather Forecast (Katy, TX)</h3>
+                            <ul>
+                                <li><strong>Saturday, October 17:</strong> High around 83°F–86°F, mostly sunny to humid conditions. Expect comfortable morning temperatures near 70°F for early games, warming up by midday.</li>
+                                <li><strong>Sunday, October 18:</strong> High around 82°F–87°F, mostly cloudy with possible overcast periods. Warm and humid overall, so stay hydrated throughout the day.</li>
+                            </ul>
+                        </div>
+
+                        <div class="htc-tdi-group">
+                            <h3>Gear + Belongings</h3>
+                            <ul>
+                                <li><strong>On-Site Gear Check:</strong> Please note that there will be no event day gear check or bag storage available. Players and participants are responsible for storing their personal belongings securely or bringing necessary equipment with them to the court area. Please leave all valuables out of plain view.</li>
+                                <li>
+                                    <strong>Game-Day Must-Haves</strong>
+                                    <ul>
+                                        <li>Basketball shoes</li>
+                                        <li>Additional shirt/socks</li>
+                                        <li>Towel</li>
+                                        <li>Backpack/cinch bag</li>
+                                        <li>Pre-signed <a href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt0d49eaab65662f26/htownclassicunder18" target="_blank" rel="noopener noreferrer">Participant Waiver &amp; Release Form</a> if you did not previously submit during online registration</li>
+                                        <li>No personal basketballs will be allowed at the event. We will provide balls for warmup and gameplay.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p><strong>Note: Players will <u>NOT</u> be able to participate without a signed <a href="https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt0d49eaab65662f26/htownclassicunder18" target="_blank" rel="noopener noreferrer">Participant Waiver &amp; Release Form</a>.</strong></p>
+                        </div>
+
+                        <div class="htc-tdi-group">
+                            <h3>Game Day Photos</h3>
+                            <ul>
+                                <li>Action photographers will be on-site capturing tournament highlights, team photos, and big plays across all 6 courts.</li>
+                                <li>We encourage you to capture photo and video content. And be sure to tag your photos using #HTownClassic on social media for a chance to be featured!</li>
+                            </ul>
+                        </div>
+
+                        <div class="htc-tdi-group">
+                            <h3>Awards + Champion Ceremonies</h3>
+                            <ul>
+                                <li>Championship games and award presentations will take place on Sunday following the conclusion of each division's bracket play.</li>
+                                <li><strong>Division Winners:</strong> Championship Belts and special prizes will be awarded to the winning teams across all divisions. Winners <strong><u>must</u></strong> be present following their final game to receive their awards.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
     <div class="cont-1656 hp-margin mb-4">
+        <section class="htc-emcees" aria-labelledby="htc-emcees-title">
+            <h2 class="htc-emcees-header m-0" id="htc-emcees-title">
+                <picture>
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltedc0553f255045bf/6acffc3a12c245708b5660af/svg_header_meetouremcees-mobile.svg">
+                    <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltc516327c6ee6b632/6acffc3a35b26d07129a8ade/svg_header_meetouremcees-desktop.svg"
+                        alt="Meet our emcees">
+                </picture>
+            </h2>
+            <div class="htc-emcees-grid">
+                <div class="htc-emcee">
+                    <img class="htc-emcee-photo"
+                        src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltb7352d6e7caa917f/6acffc71e9db0c0c6a663349/emcees_kiottibrown.png"
+                        width="135" height="166" loading="lazy"
+                        alt="Portrait of Kiotti Brown wearing an orange cap.">
+                    <div class="htc-emcee-copy">
+                        <h3 class="htc-emcee-name">Kiotti Brown</h3>
+                        <p>Kiotti aka Radio Boss aka Hardbody Kiotti is a Houston native and local favorite. His energetic personality and savvy way with words makes him a hit with listeners. Kiotti is well-known on the local music scene; formerly with Asylum Records. Music &amp; Fashion are two of his passions. Community service has always been important as well. It happens like that when your a preachers kid! Kiotti is one of the biggest artists/personalities in Houston! The “go to guy” when it comes to marketing &amp; events, follow him on social media for the “Scoop”. Instagram: HardbodyKiotti Twitter: Kiotti “I’m just Parker &amp; Dylan’s daddy. Love hard, pray harder.” Kiotti</p>
+                    </div>
+                </div>
+                <div class="htc-emcee">
+                    <img class="htc-emcee-photo"
+                        src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltc08ade65b34cef8e/6acffc717a4b459c57dcac26/emcees_taushasanders.png"
+                        width="135" height="166" loading="lazy"
+                        alt="Tausha Sanders seated on a stool, smiling and making a peace sign.">
+                    <div class="htc-emcee-copy">
+                        <h3 class="htc-emcee-name">Tausha Sanders</h3>
+                        <p>Tausha is the Founder and CEO of Her Grails, a Houston based creative marketing agency specializing in sneaker experiences. She launched Her Grails with the mission to empower, educate, and amplify women within sneaker culture and the industry at large. Through thoughtfully curated events, community driven experiences and culturally relevant storytelling, Tausha has created a space where women feel seen, welcomed, and inspired. Her work continues to bridge the gap between brands and consumers while helping introduce both new and seasoned enthusiasts to the ever evolving sneaker community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="htc-faq-wrap">
             <picture>
                 <source media="(max-width: 767px)"
@@ -831,18 +1139,6 @@
                                 <p>Hosted by Academy Sports + Outdoors in partnership with Nike and Jordan Brand.</p>
                             </div>
                         </div>
-                        <!--
-                        <div class="acc-faq__item">
-                            <button class="acc-faq__question" type="button">
-                                Where do the proceeds go?
-                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
-                                    class="acc-faq__icon" alt="">
-                            </button>
-                            <div class="acc-faq__answer">
-                                <p>All proceeds from the H-Town Classic benefit the Boys &amp; Girls Clubs of Greater Houston, supporting youth programs and community development in the Houston area.</p>
-                            </div>
-                        </div>
-                        -->
                     </div>
                 </div>
 
@@ -883,7 +1179,7 @@
                                     class="acc-faq__icon" alt="">
                             </button>
                             <div class="acc-faq__answer">
-                                <p>Games are scheduled to START at 8:30 a.m. on both days. On Saturday, we recommend teams arrive approximately one (1) hour ahead of your scheduled game time. This allows time for check-in and jersey pickup.</p>
+                                <p>Games are scheduled to START at 8:30 a.m. on both days. On Saturday, we recommend players arrive approximately one (1) hour ahead of your scheduled game time. This allows time for check-in and jersey pickup.</p>
                                 <p>Games are scheduled to end at 7 p.m. on both days.</p>
                             </div>
                         </div>
@@ -915,40 +1211,12 @@
                     <div class="acc-faq__items">
                         <div class="acc-faq__item">
                             <button class="acc-faq__question" type="button">
-                                How do I register my team?
+                                What is the entry fee?
                                 <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
                                     class="acc-faq__icon" alt="">
                             </button>
                             <div class="acc-faq__answer">
-                                <p>Registering is easy!</p>
-                                <ol>
-                                    <li>Complete the <a href="#htc-registration">above registration form</a>.</li>
-                                    <li>Review your team's information for accuracy.</li>
-                                    <li>Submit your team’s registration.</li>
-                                    <li>You will receive a confirmation email once your registration has been processed.</li>
-                                </ol>
-                                <p>There are 32 spots per division, once each division’s bracket is filled we will no longer accept registrations.</p>
-                            </div>
-                        </div>
-                        <div class="acc-faq__item">
-                            <button class="acc-faq__question" type="button">
-                                What is the team entry fee?
-                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
-                                    class="acc-faq__icon" alt="">
-                            </button>
-                            <div class="acc-faq__answer">
-                                <p>Team registration is free. There is no cost to register your team.</p>
-                            </div>
-                        </div>
-                        <div class="acc-faq__item">
-                            <button class="acc-faq__question" type="button">
-                                Is there a registration deadline?
-                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
-                                    class="acc-faq__icon" alt="">
-                            </button>
-                            <div class="acc-faq__answer">
-                                <p>Yes. To guarantee your team spot and division placement, registration must be completed by October 9, 2026, at 11:59 p.m. CT. Late registrations may be accepted on a space-available basis.</p>
-                                <p>There are 32 spots per bracket, once each division’s bracket is filled we will no longer accept registrations.</p>
+                                <p>Registration is free. There is no cost to register as a team or as an individual player and there is no cost to attend the event as a spectator.</p>
                             </div>
                         </div>
                         <div class="acc-faq__item">
@@ -1002,6 +1270,46 @@
                             </button>
                             <div class="acc-faq__answer">
                                 <p>No. Players may only participate on one team and cannot play for multiple teams.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Do I need a team to register?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>No, you can register as an individual too.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                What if we have 2 people?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>We'll match you up with someone who registered as an individual.</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                If I register as an individual, who will I be playing with?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>You'll be matched up with players based on when you registered (first come, first serve).</p>
+                            </div>
+                        </div>
+                        <div class="acc-faq__item">
+                            <button class="acc-faq__question" type="button">
+                                Can I change the team that I'm on?
+                                <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
+                                    class="acc-faq__icon" alt="">
+                            </button>
+                            <div class="acc-faq__answer">
+                                <p>Unfortunately, we can't do that so we encourage you to register your squad before the tournament.</p>
                             </div>
                         </div>
                     </div>
@@ -1086,12 +1394,12 @@
                     <div class="acc-faq__items">
                         <div class="acc-faq__item">
                             <button class="acc-faq__question" type="button">
-                                Where should teams check in?
+                                Where should players check in?
                                 <img src="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltce36b7cf4b4734b7/67eee621f41b9c58c9a87d86/Down.png"
                                     class="acc-faq__icon" alt="">
                             </button>
                             <div class="acc-faq__answer">
-                                <p>Team check-in details will be provided via email 5-7 days before the event and on the official H-Town Classic website. Check-in occurs on Oct. 17, from 7:30 a.m. to 1:30 p.m. We recommend that you arrive at venue approximately one (1) hour ahead of your scheduled game time to allow time for check-in and jersey pickup.</p>
+                                <p>Player check-in details will be provided via email a few days before the event and on the official H-Town Classic website. Check-in occurs on Oct. 17, from 7:30 a.m. to 1:30 p.m. Teams and participants must arrive at the Corporate Office parking lot at least 1 hour prior to their scheduled game time to allow enough time for parking, the shuttle ride over to the store, team check-in, and warming up.</p>
                             </div>
                         </div>
                         <div class="acc-faq__item">
@@ -1101,7 +1409,7 @@
                                     class="acc-faq__icon" alt="">
                             </button>
                             <div class="acc-faq__answer">
-                                <p>Teams should arrive at venue approximately one (1) hour ahead of their scheduled game time to allow for check-in and court familiarization.</p>
+                                <p>Teams and participants must arrive at the Corporate Office parking lot at least 1 hour prior to their scheduled game time to allow enough time for parking, the shuttle ride over to the store, team check-in, and warming up.</p>
                             </div>
                         </div>
                         <div class="acc-faq__item">
@@ -1111,7 +1419,11 @@
                                     class="acc-faq__icon" alt="">
                             </button>
                             <div class="acc-faq__answer">
-                                <p>Off-site parking will be available for the tournament. More information will be provided as the event date approaches.</p>
+                                <p><strong><u>All</u></strong> players, volunteers, guests, and spectators <strong><u>must</u></strong> park at the <strong>Academy Sports + Outdoors Corporate Office</strong> located at: 1800 N. Mason Rd., Katy, TX 77449</p>
+                                <ul>
+                                    <li>Buses/shuttles will begin transporting participants from the corporate parking lot to the store beginning at 6:30 a.m. on 10/17 and 10/18.</li>
+                                    <li>Tournament Location: Academy Sports + Outdoors – Grand Parkway Location: 23155 Katy Fwy., Katy, TX 77450</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="acc-faq__item">
@@ -1171,7 +1483,7 @@
                                     class="acc-faq__icon" alt="">
                             </button>
                             <div class="acc-faq__answer">
-                                <p>First game times will be sent to your team contacts 5-7 days before the event. Arrive early, as schedules can change based on other game results. The complete brackets and live schedules will be posted at the venue with updates as teams move forward in the tournament.</p>
+                                <p>First game times will be sent to your team contacts a few days before the event. Arrive early, as schedules can change based on other game results. The complete brackets and live schedules will be posted at the venue with updates as teams move forward in the tournament.</p>
                             </div>
                         </div>
                         <div class="acc-faq__item">
@@ -1231,48 +1543,56 @@
 <script>
 (function () {
     'use strict';
+    var el = document.getElementById('htcCountdown');
+    if (!el) return;
+
+    /* Dates are evaluated in Houston time, not the visitor's local time */
+    var eventStart = Date.UTC(2026, 9, 17);
+    var dayMs = 86400000;
+
+    function todayInHouston() {
+        var parts = {};
+        new Intl.DateTimeFormat('en-US', {
+            timeZone: 'America/Chicago',
+            year: 'numeric',
+            month: 'numeric',
+            day: 'numeric'
+        }).formatToParts(new Date()).forEach(function (p) {
+            parts[p.type] = p.value;
+        });
+        return Date.UTC(+parts.year, +parts.month - 1, +parts.day);
+    }
+
+    var daysLeft = Math.round((eventStart - todayInHouston()) / dayMs);
+    if (daysLeft > 1) {
+        el.textContent = daysLeft + ' DAYS UNTIL THE H-TOWN CLASSIC';
+    } else if (daysLeft === 1) {
+        el.textContent = '1 DAY UNTIL THE H-TOWN CLASSIC';
+    } else if (daysLeft >= -1) {
+        el.textContent = 'IT\u2019S TIME FOR THE H-TOWN CLASSIC!';
+    } else {
+        el.textContent = 'THANKS FOR PLAYING!';
+    }
+})();
+
+(function () {
+    'use strict';
 
     /* Videos from FY26 H-Town Classic content doc */
-    var desktopUrl = 'https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt865389c55bb8d1a6/6a8f3f9fd4aaa7ac397f092b/eb_1click_htown_R2-desktop.mp4';
-    var mobileUrl = 'https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt60e8448ce31c4760/6a8f3f9e36492a33db85fd3c/eb_1click_htown_R2-mobile.mp4';
-    var registrationDeadline = new Date('2026-10-10T04:59:00Z');
-    var spotsFillingStart = new Date('2026-09-05T05:00:00Z');
-    var countdownStart = new Date('2026-10-02T05:00:00Z');
+    var desktopUrl = 'https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt090950d9540acac8/6ad40c89ca19d54c3cc58a5f/banner_htowndayonerecap-desktop.mp4';
+    var mobileUrl = 'https://assets.contentstack.io/v3/assets/blt964243cdd7810dea/blt35fcbcfc3f1480e0/6ad40c898f4f8cea276bfbd7/banner_htowndayonerecap-mobile.mp4';
     var maxPlayCount = Infinity;
     var playIconUrl = 'https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltfb7f6e5f516cd86b/68dbe6f04983061fa4f367e1/button_play_default.svg';
     var pauseIconUrl = 'https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb12959797e4cc5a/68dbe6f05b98db396064ec16/button_pause_default.svg';
-
-    var countdownEl = document.getElementById('htc-countdown');
-    if (countdownEl) {
-        var now = new Date();
-        var label;
-        if (now.getTime() >= registrationDeadline.getTime()) {
-            label = 'REGISTRATION CLOSED';
-        } else if (now.getTime() >= countdownStart.getTime()) {
-            var daysLeft = Math.ceil((registrationDeadline.getTime() - now.getTime()) / 86400000);
-            if (daysLeft <= 0) {
-                label = 'LAST DAY TO REGISTER';
-            } else if (daysLeft === 1) {
-                label = '1 DAY LEFT TO REGISTER';
-            } else {
-                label = daysLeft + ' DAYS LEFT TO REGISTER';
-            }
-        } else if (now.getTime() >= spotsFillingStart.getTime()) {
-            label = 'SPOTS ARE FILLING FAST | REGISTER FOR FREE NOW';
-        } else {
-            label = 'REGISTRATION IS NOW OPEN!';
-        }
-        countdownEl.textContent = label;
-    }
 
     var wrap = document.getElementById('htc-video-section');
     var video = document.getElementById('htcVideo');
     var btn = document.getElementById('htcVideoBtn');
     var icon = document.getElementById('htcVideoIcon');
 
-    function goToRegistration() {
-        var target = document.getElementById('htc-registration');
-        window.location.hash = 'htc-registration';
+    function goToEventDetails() {
+        var target = document.getElementById('htc-event-details');
+        window.location.hash = 'htc-event-details';
         if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
@@ -1282,143 +1602,7 @@
         wrap.addEventListener('click', function (e) {
             if (e.target.closest('#htcVideoBtn')) return;
             e.preventDefault();
-            goToRegistration();
-        });
-    }
-
-    var iframe = document.getElementById('htc-redpodium');
-    if (iframe) {
-        var redPodiumOrigin = 'https://academysportsoutdoors.redpodium.com';
-        var iframeInitMsg = '[iFrameSizer]htc-redpodium:0:false:false:32:true:true:0px:bodyOffset:null:null:0:false:parent';
-        var iframeSized = false;
-        var iframeInitAttempts = 0;
-        var iframeInitTimer = null;
-        var iframeMinPx = 1800;
-        var iframeFallbackPx = 2200;
-        var iframeFallbackEl = document.getElementById('htc-iframe-fallback');
-        var iframeHeardFrom = false;
-        var iframeFallbackTimer = null;
-
-        function hideIframeFallback() {
-            if (iframeFallbackEl) {
-                iframeFallbackEl.hidden = true;
-            }
-            if (iframeFallbackTimer) {
-                clearTimeout(iframeFallbackTimer);
-                iframeFallbackTimer = null;
-            }
-        }
-
-        function showIframeFallback() {
-            if (iframeFallbackEl && !iframeHeardFrom) {
-                iframeFallbackEl.hidden = false;
-            }
-        }
-
-        function scheduleIframeFallback() {
-            iframeHeardFrom = false;
-            hideIframeFallback();
-            iframeFallbackTimer = setTimeout(showIframeFallback, 5000);
-        }
-
-        function markIframeReady() {
-            iframeHeardFrom = true;
-            hideIframeFallback();
-        }
-
-        function sendIframeInit() {
-            if (iframe.contentWindow) {
-                iframe.contentWindow.postMessage(iframeInitMsg, redPodiumOrigin);
-            }
-        }
-
-        function allowIframeScroll() {
-            iframe.setAttribute('scrolling', 'yes');
-            iframe.style.overflow = 'auto';
-        }
-
-        function lockIframeHeight(height) {
-            if (isNaN(height) || height < iframeMinPx) {
-                allowIframeScroll();
-                return;
-            }
-            iframeSized = true;
-            iframe.style.height = height + 'px';
-            iframe.setAttribute('scrolling', 'no');
-            iframe.style.overflow = 'hidden';
-            markIframeReady();
-        }
-
-        function applyIframeFallback() {
-            if (iframeSized) {
-                return;
-            }
-            allowIframeScroll();
-            var current = parseInt(iframe.style.height, 10) || iframe.offsetHeight || 0;
-            if (current < iframeFallbackPx) {
-                iframe.style.height = iframeFallbackPx + 'px';
-            }
-        }
-
-        function startIframeInitRetries() {
-            iframeSized = false;
-            iframeInitAttempts = 0;
-            allowIframeScroll();
-            if (!iframeHeardFrom) {
-                scheduleIframeFallback();
-            }
-            sendIframeInit();
-            if (iframeInitTimer) {
-                clearInterval(iframeInitTimer);
-            }
-            iframeInitTimer = setInterval(function () {
-                iframeInitAttempts += 1;
-                if (iframeSized) {
-                    clearInterval(iframeInitTimer);
-                    iframeInitTimer = null;
-                    return;
-                }
-                if (iframeInitAttempts > 6) {
-                    clearInterval(iframeInitTimer);
-                    iframeInitTimer = null;
-                    applyIframeFallback();
-                    return;
-                }
-                sendIframeInit();
-            }, 400);
-        }
-
-        window.addEventListener('message', function (event) {
-            if (!event.origin || event.origin.indexOf('redpodium.com') === -1) {
-                return;
-            }
-            var msg = '' + event.data;
-            if (msg.indexOf('[iFrameSizer]') !== 0) {
-                return;
-            }
-            var payload = msg.split(']')[1];
-            if (!payload || payload === 'resize' || payload === 'reset') {
-                return;
-            }
-            var parts = payload.split(':');
-            if (parts[3] === 'true' || parts[3] === 'false' || parts[3] === 'undefined') {
-                return;
-            }
-            var height = parseInt(parts[1], 10);
-            if (!isNaN(height) && height > 100) {
-                markIframeReady();
-                lockIframeHeight(height);
-            }
-        });
-
-        iframe.addEventListener('load', startIframeInitRetries);
-        iframe.addEventListener('error', showIframeFallback);
-        startIframeInitRetries();
-
-        window.addEventListener('resize', function () {
-            if (iframe.contentWindow) {
-                iframe.contentWindow.postMessage('[iFrameSizer]resize', redPodiumOrigin);
-            }
+            goToEventDetails();
         });
     }
 
